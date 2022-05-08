@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "Point": {
+      "commandName": "Project"
+    },
+    "Point AST": {
+      "commandName": "Project",
+      "commandLineArgs": "UPDATE_AST"
+    },
+    "Point Script": {
+      "commandName": "Project",
+      "commandLineArgs": "build C:\\Users\\melod\\source\\web\\school\\index.pt C:\\Users\\melod\\source\\web\\school\\build\\index.html"
+    }
+  }
+}
