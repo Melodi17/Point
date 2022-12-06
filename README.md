@@ -1,5 +1,3 @@
-# Point
-
 ## What is Point?
 Point is a HTML preproccessor aimed at providing rich features and easier syntax, it adds varibles, scripting support, expression evaluation, comments, importing, file attaching, syntax suggestion, versatile syntax and much more! Point syntax is similar to CSS's syntax and is capable of seamlessly intergrating into your existing web framework or being used standalone. The transpiler is written in C# and is flexible, lightweight and efficent.
 
