@@ -191,5 +191,11 @@
             else
                 return $"<{tag}{(attributes.Count > 0 ? " " : "")}{string.Join(" ", attributes.Select(x => x.Key + "=\"" + x.Value + "\""))}>{string.Join("", content)}</{tag}>";
         }
+
+        private string Escape(string str)
+        {
+            //fix
+            return str.Replace("&", "&amp").Replace("<", "&lt").Replace(">", "&gt");
+        }
     }
 }
