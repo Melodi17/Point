@@ -109,7 +109,7 @@ namespace Point.Lexing
                 default:
                     if (char.IsDigit(c))
                         HandleInterger();
-                    else if (char.IsLetterOrDigit(c) | c == '_')
+                    else if (char.IsLetterOrDigit(c) || c == '_')
                         HandleIdentifier();
                     else
                     {
@@ -232,7 +232,7 @@ namespace Point.Lexing
             AddToken(TokenType.Variable, text);
         }
         private bool ValidIdentifierChar(char c)
-            => char.IsLetterOrDigit(c) || c == '_';
+            => char.IsLetterOrDigit(c) || c == '_' || c == '-';
     }
 
     public static class Extensions
